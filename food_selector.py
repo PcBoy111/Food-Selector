@@ -8,9 +8,12 @@ print("Enter your desired dishes: ")
 while True:
     food_string = input("\t")
 
-    # Break if user input is None
+    # Break if user input is None and at least two dishes are added
     if not food_string:
-        break
+        if len(food_list) > 2:
+            break
+        else:
+            print("Please add another two dishes.")
 
     # Add input to the list of dishes
     food_list.append(food_string)

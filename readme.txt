@@ -1,3 +1,4 @@
 Food Selector allows the user to input their wanted dishes, and selects one of them at random.
+The user must add at least two dishes for the program to finish.
 
-To break out of this program, enter nothing.
+To complete inputting dishes, enter nothing.
