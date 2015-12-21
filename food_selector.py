@@ -13,7 +13,7 @@ while True:
         if len(food_list) > 2:
             break
         else:
-            print("Please add another two dishes.")
+            print("Please add at least two dishes.")
 
     # Add input to the list of dishes
     food_list.append(food_string)
