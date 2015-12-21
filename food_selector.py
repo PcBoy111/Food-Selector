@@ -11,10 +11,9 @@ while True:
 
     # Break if user input is (None or ;) and at least two dishes are added
     if (not food_string) or (food_string == ";"):
-        if len(food_list) > 2:
-            break
-        else:
+        if len(food_list) < 2:
             print("Please add at least two dishes.")
+        break
 
     # Add input to the list of dishes
     food_list.append(food_string)
