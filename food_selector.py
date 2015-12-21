@@ -6,7 +6,8 @@ print("Enter your desired dishes: ")
 
 # Prompt for a dish until the user has no more
 while True:
-    food_string = input("\t")
+    current_line = len(food_list) + 1
+    food_string = input("%d]\t" % current_line)
 
     # Break if user input is None and at least two dishes are added
     if not food_string:
