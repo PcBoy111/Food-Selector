@@ -8,11 +8,12 @@ print("Enter your desired dishes: ")
 while True:
     food_string = input("\t")
 
-    # Add input to list of dishes if available
-    if food_string:
-        food_list.append(food_string)
-    else:
+    # Break if user input is None
+    if not food_string:
         break
+
+    # Add input to the list of dishes
+    food_list.append(food_string)
 
 # Select dish
 food = random.choice(food_list)
