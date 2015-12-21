@@ -9,8 +9,8 @@ while True:
     current_line = len(food_list) + 1
     food_string = input("%d]\t" % current_line)
 
-    # Break if user input is None and at least two dishes are added
-    if not food_string:
+    # Break if user input is (None or ;) and at least two dishes are added
+    if (not food_string) or (food_string == ";"):
         if len(food_list) > 2:
             break
         else:
