@@ -6,21 +6,23 @@ running = True
 
 print("Enter your desired dishes: ")
 
+
 # Tries to stop running
 def stop_running():
     global running
-    
+
     # Stop running if the user has input two or more dishes
     if len(food_list) > 1:
         running = False
     else:
         print("Please input at least two dishes.")
 
+
 # Prompt for a dish until the user has no more
 while running:
     current_line = len(food_list) + 1
     food_string = input("%d]\t" % current_line)
-    
+
     # Verify the string, and stop the program if conditions are met.
     if len(food_string) > 0:
         # When the user inputs a period (.), exit the program.
